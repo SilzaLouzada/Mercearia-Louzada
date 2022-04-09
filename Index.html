@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Mercearia.css" />
+   
+    <title>Mercearia Louzada</title>
+</head>
+
+<body>
+    <div class="caixa-superior">
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho">Mercearia Louzada</h2>
+            <a href="#titulo-inferior" class="link-cabecalho">Quem somos</a>
+            <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
+            <a class="link-cabecalho" onclick="chameOAbacate()">Contato</a>
+        </div>
+
+        <h1>Mercearia Louzada</h1>
+
+        <form id="formulario-contato" action="https://formsubmit.co/silzalouzada@gmail.com" method="POST">
+            <h3 class="titulo-formulario">Entre em contato</h3>
+            <label>
+                Nome
+                <input  type="text" name="Nome" placeholder="Digite seu Nome" required/>
+            </label>
+
+            <label>
+                E-mail
+                <input type="email" name="email" placeholder="Digite seu E-mail" required/>
+            </label>
+
+            <label>
+                WhatsApp
+                <input type="tel" name="telefone" placeholder="Digite seu telefone" required/>
+            </label>
+
+            <label>
+                Fale Conosco
+                <textarea name="info" placeholder="Digite os produtos"></textarea>
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <h2 id="titulo-meio">Nossos Produtos</h2>
+
+    <div class="caixa-central">
+        <div class="card">
+            <h3 class="titulo-card">Produtos de limpreza e alimentos não pereciveis</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Frutas, verduras e legumes</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Carnes e frios</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="caixa-inferior">
+        <h2 id="titulo-inferior">Sobre nós</h2>
+        <p class="paragrafo-inferior">
+            Estamos presente no mercado há mais de 20 anos atendendo nossos clientes com os melhores produtos. 
+            Trabalhamos com frutas, verduras, legumes, produtos de mercearia, frios e carnes fresquinhas.
+            Temos orgulho da nossa tragetoria e estamos aqui para atende-los com muito carinha e dedicação.
+
+
+        </p>
+    </div>
+</body>
+<script>
+let formulario = document.getElementById("formulario-contato")
+
+
+function chameOAbacate(){
+    formulario.className = "mostrar-formulario"
+}
+
+
+
+</script>
+</html>
